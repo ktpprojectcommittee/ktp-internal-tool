@@ -57,17 +57,18 @@ We chose Supabase because it collapses the typical backend stack (database + aut
 
 ```
 ktp-internal-tool/
-├── app/                    # Next.js pages (App Router)
-│   ├── page.tsx            # Course dashboard
-│   ├── chat/page.tsx       # RAG chatbot
-│   └── ...
-├── components/             # Reusable UI components
-├── lib/
-│   ├── supabase.ts         # Supabase client setup
-│   └── openai.ts           # OpenAI client setup
+├── src/
+│   ├── app/                    # Next.js pages (App Router)
+│   │   ├── page.tsx            # Course dashboard
+│   │   ├── chat/page.tsx       # RAG chatbot
+│   │   └── ...
+│   ├── components/             # Reusable UI components
+│   └── lib/
+│       ├── supabase.ts         # Supabase client setup
+│       └── openai.ts           # OpenAI client setup
 ├── supabase/
-│   └── migrations/         # DB schema migrations
-├── .env.local              # Environment variables (not committed)
+│   └── migrations/             # DB schema migrations
+├── .env.local                  # Environment variables (not committed)
 └── README.md
 ```
 
